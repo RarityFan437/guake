@@ -1123,8 +1123,6 @@ class Guake(SimpleGladeApp):
         if not use_vte_titles:
             return
 
-        # TODO NOTEBOOK this code only works if there is only one terminal in a
-        # page, this need to be rewritten
         notebook = self.get_notebook()
         for page_num in range(notebook.get_n_pages()):
             terminals = notebook.get_terminals_for_page(page_num)
